@@ -18,7 +18,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background: radial-gradient(circle at top, #d37407 50%, #ffffff 30%, #020617 20%);
+  background: radial-gradient(circle at top, #00b4d8 20%, #0077b6 20% 80%, #023e8a 80% 100%   );
   color: #fff;
 }
 * {

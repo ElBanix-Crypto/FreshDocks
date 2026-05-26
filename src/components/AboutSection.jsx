@@ -4,11 +4,11 @@ import SectionTitle from './SectionTitle';
 export default function AboutSection() {
   return (
     <section id="about" className="mx-auto text-center w-full max-w-7xl px-2 sm:px-4 md:px-8 py-10 md:py-14">
-      <div className="rounded-3xl border text-amber-300 border-white/10 bg-white/5 p-4 sm:p-6 md:p-8 backdrop-blur-sm">
+      <div className="rounded-3xl border text-amber-500 border-white/10 bg-white/5 p-4 sm:p-6 md:p-8 backdrop-blur-sm">
         <SectionTitle
           eyebrow="About FreshDocks"
           title="Built for premium seafood trade"
-          subtitle="FreshDocks is a modern Seafood marketplace connecting local fishermen with serious buyers."
+          subtitle="FreshDocks is a modern Seafood marketplace connecting local fishermen and Vendors with serious buyers."
         />
 
         <div className="grid gap-4 sm:gap-6 md:grid-cols-3">

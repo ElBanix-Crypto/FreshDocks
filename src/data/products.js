@@ -1,11 +1,11 @@
 export const products = [
   {
     id: 1,
-    name: 'Fresh Snapper',
-    category: 'fish',
-    label: 'Fish',
-    wholesale: 12500,
-    household: 15500,
+    name: 'Fresh Fish (Red Snapper, Croaker, Tilapia)',
+    category: 'fishes',
+    label: 'Fishes',
+    wholesale: 25000,
+    household: 8000,
     unit: 'per kg',
     images: [
       '/products/redSNapper.jpg',
@@ -15,11 +15,11 @@ export const products = [
   },
   {
     id: 2,
-    name: 'Tiger Prawns',
+    name: 'Crayfish, Prawns, Shrimps',
     category: 'shellfish',
     label: 'Shellfish',
     wholesale: 18000,
-    household: 22000,
+    household: 6000,
     unit: 'per kg',
     images: [
       '/products/prawns.jpg',
@@ -29,25 +29,25 @@ export const products = [
   },
   {
     id: 3,
-    name: 'Blue Crab Pack',
-    category: 'bundles',
-    label: 'Bundles',
+    name: 'Periwinkle, Crabs, Sea snails',
+    category: 'Bundles',
+    label: 'Shellfish',
     wholesale: 24000,
-    household: 2800,
-    unit: 'per pack',
+    household: 1500,
+    unit: 'per kg',
     images: [
-      '/products/crabs.jpg',
-      '/products/crab-2.jpg',
-      '/products/crab-3.jpg'
+      '/products/periwinkle-1.jpg',
+      '/products/periwinkle-2.jpg',
+      '/products/crabs.jpg'
     ]
   },
   {
     id: 4,
-    name: 'Bonny Mixed Catch',
+    name: 'Fresh Catch Bundle',
     category: 'fresh',
     label: 'Fresh Catch',
-    wholesale: 30000,
-    household: 6000,
+    wholesale: 80000,
+    household: 15000,
     unit: 'bundle',
     images: [
       '/products/croacker.jpg',

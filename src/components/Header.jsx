@@ -3,12 +3,12 @@ import { FiMenu, FiX } from 'react-icons/fi';
 
 const links = [
   { label: 'Categories', href: '#categories' },
-  { label: 'Fish', href: '#fish' },
+  { label: 'Fishes', href: '#fish' },
   { label: 'Shellfish', href: '#shellfish' },
   { label: 'Bundles', href: '#bundles' },
   { label: 'Fresh Catch', href: '#fresh' },
-  { label: 'Wholesale', href: '#wholesale' },
-  { label: 'About Bonny Island', href: '#about' }
+  { label: 'Contacts', href: '#contact' },
+  { label: 'About FreshDocks', href: '#about' }
 ];
 
 export default function Header({ menuOpen, setMenuOpen }) {
@@ -34,7 +34,7 @@ export default function Header({ menuOpen, setMenuOpen }) {
         <div className="hidden items-center gap-3 lg:flex">
           <a
             href="#vendor-portal"
-            className="rounded-full bg-orange-400 px-5 py-2 text-sm font-semibold text-white transition hover:bg-slate-800"
+            className="rounded-full bg- px-5 py-2 text-sm font-semibold bg-amber-500 text-white transition hover:bg-emerald-300"
           >
             Vendor Portal
           </a>
@@ -42,7 +42,7 @@ export default function Header({ menuOpen, setMenuOpen }) {
 
         <button
           type="button"
-          className="rounded-full bg-orange-400 p-2 text-white lg:hidden"
+          className="rounded-full bg-amber-500 p-2 text-white lg:hidden"
           onClick={() => setMenuOpen((v) => !v)}
           aria-label="Toggle menu"
         >
@@ -65,7 +65,7 @@ export default function Header({ menuOpen, setMenuOpen }) {
             ))}
             <a
               href="#vendor-portal"
-              className="mt-2 rounded-full bg-orange-400 px-5 py-2 text-center text-sm font-semibold text-white"
+              className="mt-2 rounded-full bg-amber-500 px-5 py-2 text-center text-sm font-semibold text-white transition hover:bg-emerald-300"
               onClick={() => setMenuOpen(false)}
             >
               Vendor Portal

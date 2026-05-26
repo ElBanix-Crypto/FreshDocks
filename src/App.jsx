@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from 'react';
+ import React, { useCallback, useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 
 import Header from './components/Header';
@@ -85,7 +85,7 @@ export default function App() {
         <title>FreshDocks | Premium Seafood Marketplace</title>
         <meta
           name="description"
-          content="FreshDocks connects Bonny Island fishermen to premium seafood buyers with wholesale and household pricing."
+          content="FreshDocks connects Bonny Island fishermen and Vendors to premium seafood buyers with wholesale and household pricing."
         />
         <meta property="og:title" content="FreshDocks" />
         <meta

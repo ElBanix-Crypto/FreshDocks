@@ -1,6 +1,7 @@
 import React, { memo, useCallback } from 'react';
 import { FiMessageCircle } from 'react-icons/fi';
 import { createWhatsAppLink } from '../utils/waLink';
+import Marquee from "react-fast-marquee"
 
 const VendorCard = memo(function VendorCard({ name, role, image, phone }) {
   const message = `Hello ${name}, I want to order seafood from FreshDocks.`;
