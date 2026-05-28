@@ -9,6 +9,9 @@ import CartPanel from './components/CartPanel';
 import AboutSection from './components/AboutSection';
 import Footer from './components/Footer';
 import MobileNav from './components/MobileNav';
+import VendorRegistration from './pages/VendorRegistration';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { vendors } from './data/vendors';
 import { products } from './data/products';
@@ -80,52 +83,62 @@ export default function App() {
   }, [cart, pricing, total]);
 
   return (
-    <div className="min-h-screen text-white bg-gradient-to-b from-orange-900/80 via-white/10 to-slate-950">
-      <Helmet>
-        <title>FreshDocks | Premium Seafood Marketplace</title>
-        <meta
-          name="description"
-          content="FreshDocks connects Bonny Island fishermen and Vendors to premium seafood buyers with wholesale and household pricing."
-        />
-        <meta property="og:title" content="FreshDocks" />
-        <meta
-          property="og:description"
-          content="Premium seafood marketplace for Bonny Island."
-        />
-      </Helmet>
+    <Router>
+      <div className="min-h-screen text-white bg-gradient-to-b from-orange-900/80 via-white/10 to-slate-950">
+        <Helmet>
+          <title>FreshDocks | Premium Seafood Marketplace</title>
+          <meta
+            name="description"
+            content="FreshDocks connects Bonny Island fishermen and Vendors to premium seafood buyers with wholesale and household pricing."
+          />
+          <meta property="og:title" content="FreshDocks" />
+          <meta
+            property="og:description"
+            content="Premium seafood marketplace for Bonny Island."
+          />
+        </Helmet>
 
-      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
-      <main>
-        <Hero pricing={pricing} setPricing={setPricing}>
-          <VendorSpotlight vendors={vendors} />
-        </Hero>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <main>
+                <Hero pricing={pricing} setPricing={setPricing}>
+                  <VendorSpotlight vendors={vendors} />
+                </Hero>
 
-        <section className="mx-auto w-full max-w-7xl px-2 sm:px-4 md:px-6 lg:px-8 py-10 md:py-14">
-          <div className="grid gap-8 md:gap-10 lg:grid-cols-2">
-            <Marketplace
-              products={products}
-              priceFor={priceFor}
-              onAdd={addToCart}
-            />
+                <section className="mx-auto w-full max-w-7xl px-2 sm:px-4 md:px-6 lg:px-8 py-10 md:py-14">
+                  <div className="grid gap-8 md:gap-10 lg:grid-cols-2">
+                    <Marketplace
+                      products={products}
+                      priceFor={priceFor}
+                      onAdd={addToCart}
+                    />
 
-            <CartPanel
-              cart={cart}
-              pricing={pricing}
-              total={total}
-              checkoutText={checkoutText}
-              onUpdateQty={updateQty}
-              onRemoveItem={removeItem}
-              onPricingChange={setPricing}
-            />
-          </div>
-        </section>
+                    <CartPanel
+                      cart={cart}
+                      pricing={pricing}
+                      total={total}
+                      checkoutText={checkoutText}
+                      onUpdateQty={updateQty}
+                      onRemoveItem={removeItem}
+                      onPricingChange={setPricing}
+                    />
+                  </div>
+                </section>
 
-        <AboutSection />
-      </main>
+                <AboutSection />
+              </main>
+            }
+          />
+          <Route path="/vendor-registration" element={<VendorRegistration />} />
+        </Routes>
 
-      <Footer />
-      <MobileNav />
-    </div>
+        <Footer />
+        <MobileNav />
+      </div>
+    </Router>
   );
 }

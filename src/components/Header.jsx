@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FiMenu, FiX } from 'react-icons/fi';
 
 const links = [
@@ -8,16 +9,16 @@ const links = [
   { label: 'Bundles', href: '#bundles' },
   { label: 'Fresh Catch', href: '#fresh' },
   { label: 'Contacts', href: '#contact' },
-  { label: 'About FreshDocks', href: '#about' }
+  { label: 'About FreshDocks', href: '#about' },
 ];
 
 export default function Header({ menuOpen, setMenuOpen }) {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-white/70 backdrop-blur-lg text-slate-950">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
-        <a href="#top" className="text-lg font-black tracking-tight">
+        <Link to="/" className="text-lg font-black tracking-tight">
           FreshDocks
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">
           {links.map((link) => (
@@ -33,10 +34,10 @@ export default function Header({ menuOpen, setMenuOpen }) {
 
         <div className="hidden items-center gap-3 lg:flex">
           <a
-            href="#vendor-portal"
-            className="rounded-full bg- px-5 py-2 text-sm font-semibold bg-amber-500 text-white transition hover:bg-emerald-300"
+            href="/vendor-registration"
+            className="rounded-full bg-amber-500 px-5 py-2 text-sm font-semibold text-white transition hover:bg-emerald-300"
           >
-            Vendor Portal
+            Vendor Registration
           </a>
         </div>
 
@@ -64,11 +65,11 @@ export default function Header({ menuOpen, setMenuOpen }) {
               </a>
             ))}
             <a
-              href="#vendor-portal"
+              href="/vendor-registration"
               className="mt-2 rounded-full bg-amber-500 px-5 py-2 text-center text-sm font-semibold text-white transition hover:bg-emerald-300"
               onClick={() => setMenuOpen(false)}
             >
-              Vendor Portal
+              Vendor Registration
             </a>
           </div>
         </div>

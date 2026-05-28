@@ -8,9 +8,9 @@ export const products = [
     household: 8000,
     unit: 'per kg',
     images: [
-      '/products/redSNapper.jpg',
-      '/products/snapper-2.jpg',
-      '/products/snapper-3.jpg'
+      'public/products/snapper-1 (1).png',
+      'public/products/Snapper2.png',
+      'public/products/Snapper3.png'
     ]
   },
   {
@@ -22,9 +22,9 @@ export const products = [
     household: 6000,
     unit: 'per kg',
     images: [
+      '/products/lobster.png',
       '/products/prawns.jpg',
-      '/products/prawns-2.jpg',
-      '/products/prawns-3.jpg'
+      '/products/shrimps.jpg'
     ]
   },
   {
@@ -32,7 +32,7 @@ export const products = [
     name: 'Periwinkle, Crabs, Sea snails',
     category: 'Bundles',
     label: 'Shellfish',
-    wholesale: 24000,
+    wholesale: 24000 ,
     household: 1500,
     unit: 'per kg',
     images: [
@@ -51,7 +51,7 @@ export const products = [
     unit: 'bundle',
     images: [
       '/products/croacker.jpg',
-      '/products/shrimps.jpg',
+      '/products/crayfish.jpg',
       '/products/clams.jpg'
     ]
   }
