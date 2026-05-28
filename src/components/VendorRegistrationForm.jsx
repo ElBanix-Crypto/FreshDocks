@@ -34,6 +34,7 @@ const VendorRegistrationForm = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
+              placeholder="Your full name"
               required
               className="w-full border px-3 py-2 rounded text-slate-500"
             />
@@ -45,6 +46,7 @@ const VendorRegistrationForm = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
+              placeholder="you@email.com"
               required
               className="w-full border px-3 py-2 rounded text-slate-500"
             />
@@ -56,6 +58,7 @@ const VendorRegistrationForm = () => {
               name="business"
               value={form.business}
               onChange={handleChange}
+              placeholder="Your business name"
               required
               className="w-full border px-3 py-2 rounded text-slate-500"
             />
@@ -67,6 +70,7 @@ const VendorRegistrationForm = () => {
               name="phone"
               value={form.phone}
               onChange={handleChange}
+              placeholder="+2348000000000"
               required
               className="w-full border px-3 py-2 rounded text-slate-500"
             />
@@ -77,6 +81,7 @@ const VendorRegistrationForm = () => {
               name="description"
               value={form.description}
               onChange={handleChange}
+              placeholder="Tell us about your business and the products you offer"
               required
               className="w-full border px-3 py-2 rounded text-slate-500"
               rows={3}
