@@ -21,8 +21,8 @@ const VendorRegistrationForm = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-6 bg-white rounded shadow mt-8 text-slate-900">
-      <h2 className="text-2xl font-bold mb-4 text-center text-emerald-900">Vendor Registration</h2>
+    <div className="max-w-xl mx-auto p-6 bg-white rounded shadow-2xs mt-8 text-slate-900">
+      <h2 className="text-2xl font-bold mb-4 text-center text-emerald-900">Vendor <span className="text-emerald-500 font-semibold">Registration</span></h2>
       {submitted ? (
         <div className="text-green-600 font-semibold text-center">Thank you for registering! We will contact you soon.</div>
       ) : (
