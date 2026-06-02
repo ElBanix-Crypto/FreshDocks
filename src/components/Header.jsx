@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiMenu, FiX } from 'react-icons/fi';
+import logo from '../assets/logo-1.png';
 
 const links = [
   { label: 'Categories', href: '#categories' },
@@ -16,8 +17,8 @@ export default function Header({ menuOpen, setMenuOpen }) {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-white/70 backdrop-blur-lg text-slate-950">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
-        <Link to="/" className="text-lg font-black tracking-tight">
-          <img src="src/assets/logo-1.png" alt="FreshDocks Logo" className="h-20 w-20 " />
+        <Link to="/" className="text-lg font-black tracking-tight ba">
+          <img src={logo} alt="FreshDocks Logo" className="h-20 w-20 " />
             FreshDocks
         </Link>
 
@@ -34,12 +35,12 @@ export default function Header({ menuOpen, setMenuOpen }) {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <a
-            href="/vendor-registration"
+          <Link
+            to="/vendor-registration"
             className="rounded-full bg-amber-500 px-5 py-2 text-sm font-semibold text-white transition hover:bg-emerald-300"
           >
             Vendor Registration
-          </a>
+          </Link>
         </div>
 
         <button
@@ -65,13 +66,13 @@ export default function Header({ menuOpen, setMenuOpen }) {
                 {link.label}
               </a>
             ))}
-            <a
-              href="/vendor-registration"
+            <Link
+              to="/vendor-registration"
               className="mt-2 rounded-full bg-amber-500 px-5 py-2 text-center text-sm font-semibold text-white transition hover:bg-emerald-300"
               onClick={() => setMenuOpen(false)}
             >
               Vendor Registration
-            </a>
+            </Link>
           </div>
         </div>
       ) : null}
