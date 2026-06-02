@@ -15,7 +15,7 @@ export const products = [
   },
   {
     id: 2,
-    name: 'Crayfish, Prawns, Shrimps',
+    name: 'Lobster, Prawns, Shrimps',
     category: 'shellfish',
     label: 'Shellfish',
     wholesale: 18000,
