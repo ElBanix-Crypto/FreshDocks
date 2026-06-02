@@ -17,7 +17,8 @@ export default function Header({ menuOpen, setMenuOpen }) {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-white/70 backdrop-blur-lg text-slate-950">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
         <Link to="/" className="text-lg font-black tracking-tight">
-          FreshDocks
+          <img src="src/assets/logo-1.png" alt="FreshDocks Logo" className="h-20 w-20 " />
+            FreshDocks
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">
@@ -25,7 +26,7 @@ export default function Header({ menuOpen, setMenuOpen }) {
             <a
               key={link.label}
               href={link.href}
-              className="text-sm font-medium text-slate-700 transition hover:text-slate-950"
+              className="text-sm font-medium text-slate-700 transition hover:text-amber-600"
             >
               {link.label}
             </a>
@@ -76,4 +77,4 @@ export default function Header({ menuOpen, setMenuOpen }) {
       ) : null}
     </header>
   );
-}
+} 
