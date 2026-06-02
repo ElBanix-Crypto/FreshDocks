@@ -10,7 +10,7 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-2 text-amber-500">Contact Us</h3>
             <ul className="space-y-1">
               <li>Phone: <a href="tel:+2348024369034" className="hover:underline text-amber-500">+234 802 436 9034</a></li>
-              <li>Email: <a href="mailto:info@freshdocks.com" className="hover:underline text-amber-500">info@freshdocks.com</a></li>
+              <li>Email: <a href="mailto:freshdocks1@gmail.com" className="hover:underline text-amber-500">freshdocks1@gmail.com</a></li>
               <li>Address: Bonny Island, Rivers State, Nigeria</li>
             </ul>
           </div>

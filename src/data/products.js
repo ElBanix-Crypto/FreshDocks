@@ -8,9 +8,9 @@ export const products = [
     household: 8000,
     unit: 'per kg',
     images: [
-      'public/products/snapper-1 (1).png',
-      'public/products/Snapper2.png',
-      'public/products/Snapper3.png'
+      '/products/snapper-1 (1).png',
+      '/products/Snapper2.png',
+      '/products/Snapper3.png'
     ]
   },
   {
