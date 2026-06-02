@@ -1,7 +1,7 @@
 import React from 'react';
 import { FiMinus, FiPlus, FiTrash2, FiMessageCircle } from 'react-icons/fi';
 import SectionTitle from './SectionTitle';
-import { createWhatsAppLink } from '../utils/waLink';
+import { createWhatsAppLink } from '../utils/walink';
 
 const HQ_PHONE = '+2348024369034';
 

@@ -1,6 +1,6 @@
 import React, { memo, useCallback } from 'react';
 import { FiMessageCircle } from 'react-icons/fi';
-import { createWhatsAppLink } from '../utils/waLink';
+import { createWhatsAppLink } from '../utils/walink';
 import Marquee from "react-fast-marquee"
 
 const VendorCard = memo(function VendorCard({ name, role, image, phone }) {
