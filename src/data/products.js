@@ -51,7 +51,7 @@ export const products = [
     unit: 'bundle',
     images: [
       '/products/croacker.jpg',
-      '/products/crayfish.jpg',
+      '/products/bottle-ngolo.jpg',
       '/products/clams.jpg'
     ]
   }

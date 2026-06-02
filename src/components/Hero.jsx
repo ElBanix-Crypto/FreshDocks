@@ -3,11 +3,16 @@ import React from 'react';
 export default function Hero({ pricing, setPricing, children }) {
   return (
     <section id="top" className="relative overflow-hidden">
-      <div
-        className="min-h-[92vh] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/freshdocks-hero-seafood-PVDLJzMesW4MHfZBD7vo2C.webp')" }}
-      >
-        <div className="w-full min-h-[92vh] flex items-center justify-center bg-black/40">
+      <div className="min-h-[92vh] flex items-center justify-center relative">
+        <img
+          src="/freshdocks-hero-seafood-PVDLJzMesW4MHfZBD7vo2C.webp"
+          alt="FreshDocks hero background"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
+          width="1600"
+          height="900"
+        />
+        <div className="w-full min-h-[92vh] flex items-center justify-center bg-black/40 relative z-10">
           <div className="mx-auto flex flex-col items-center justify-center max-w-7xl px-2 sm:px-4 md:px-8 py-8 md:py-14 w-full">
             <div className="max-w-3xl w-full text-center">
               <p className="text-xs font-semibold uppercase rounded-3xl bg-amber-500 tracking-[0.35em] text-slate-700 px-2 py-1 inline-block">

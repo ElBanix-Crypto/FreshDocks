@@ -1,7 +1,7 @@
 import React, { memo, useCallback, useMemo, useState } from 'react';
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 
-const FALLBACK_IMAGE = '/public/freshdocks-hero-seafood-PVDLJzMesW4MHfZBD7vo2C.webp';
+const FALLBACK_IMAGE = '/freshdocks-hero-seafood-PVDLJzMesW4MHfZBD7vo2C.webp';
 
 const ProductCard = memo(function ProductCard({
   id,

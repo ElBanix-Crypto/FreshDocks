@@ -11,7 +11,7 @@ const VendorCard = memo(function VendorCard({ name, role, image, phone }) {
   }, [phone, message]);
 
   return (
-    <div className="min-w-[16rem] max-w-xs w-full snap-start rounded-3xl border border-white/15 bg-white/10 p-4 shadow-2xl backdrop-blur-md flex-shrink-0 md:flex-shrink md:w-auto">
+    <div className="min-w-[16rem] max-w-xs w-full snap-start rounded-3xl border border-white/15 bg-white/10 p-4 shadow-2xl backdrop-blur-md shrink-0 md:shrink md:w-auto">
       <div className="flex items-center gap-4">
         <img
           src={image}
