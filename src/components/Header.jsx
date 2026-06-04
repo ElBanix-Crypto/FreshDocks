@@ -18,7 +18,7 @@ export default function Header({ menuOpen, setMenuOpen }) {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-white/70 backdrop-blur-lg text-slate-950">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
         <Link to="/" className="text-lg font-black tracking-tight ba">
-          <img src={logo} alt="FreshDocks Logo" className="h-20 w-20 " loading="lazy" width="80" height="80" />
+          <img src={logo} alt="FreshDocks Logo" className="h-10 w-10 " loading="lazy" width="80" height="80" />
             FreshDocks
         </Link>
 
